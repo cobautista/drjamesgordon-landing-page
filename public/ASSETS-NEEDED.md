@@ -50,6 +50,28 @@
 
 ---
 
+## Legacy of Excellence Section
+
+### Award/Magazine Cover Images
+- **Location:** `/public/images/awards/`
+- **Files Needed:**
+  - `new-york-magazine.jpg` - New York Magazine "Top Doctors" cover
+  - `best-westchester.jpg` - Best of Westchester "Best Cataract Surgeon" certificate
+  - `castle-connolly-2026.jpg` - Castle Connolly "Top Doctors New York 2026" cover
+  - `super-doctors-2025.jpg` - Super Doctors "Top NY Physicians 2025" cover
+  - `westchester-magazine.jpg` - Westchester Magazine "Top Cosmetic Doctors" cover
+
+**Image Specifications:**
+- Format: JPG or PNG
+- Aspect Ratio: 3:4 (portrait, e.g., 600x800px)
+- Resolution: High-res for retina displays (2x actual display size)
+- Display Size: 288px-320px width
+- File Size: <300KB each (optimized)
+- Content: Framed magazine covers or certificates with Dr. Gordon
+- Note: These should be actual magazine covers/certificates showing Dr. Gordon's recognition
+
+---
+
 ## How to Add Assets
 
 1. **Videos**: Place video files in `/public/videos/`
