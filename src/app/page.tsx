@@ -9,6 +9,7 @@ import HallmarkExcellence from '@/components/HallmarkExcellence'
 import PressFeatures from '@/components/PressFeatures'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ContactForm from '@/components/ContactForm'
+import Footer from '@/components/Footer'
 
 export default function HomePage() {
   return (
@@ -25,8 +26,8 @@ export default function HomePage() {
         <PressFeatures />
         <BeforeAfterGallery />
         <ContactForm />
-        {/* Additional sections will be added here */}
       </main>
+      <Footer />
     </>
   )
 }
