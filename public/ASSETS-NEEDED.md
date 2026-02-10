@@ -72,6 +72,28 @@
 
 ---
 
+## Signature Treatments Section
+
+### Treatment Background Images
+- **Location:** `/public/images/treatments/`
+- **Files Needed:**
+  - `medical-eye-care.jpg` - Medical equipment/examination room
+  - `eyelid-surgery.jpg` - Surgical suite or close-up of eyelid procedure
+  - `non-surgical.jpg` - Skincare/laser treatment imagery
+  - `injectables.jpg` - Injectable treatment or cosmetic procedure
+
+**Image Specifications:**
+- Format: JPG or WebP
+- Aspect Ratio: 4:5 (portrait, e.g., 800x1000px)
+- Resolution: High-res for retina displays (2x actual display size)
+- Display Size: Varies by breakpoint (300px-400px width)
+- File Size: <200KB each (optimized)
+- Content: Professional medical imagery related to each treatment category
+- Style: Clean, modern, medical aesthetic
+- Note: These are background images that will be overlaid with text, so ensure good contrast
+
+---
+
 ## How to Add Assets
 
 1. **Videos**: Place video files in `/public/videos/`
