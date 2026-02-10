@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import LegacyExcellence from '@/components/LegacyExcellence'
 import SignatureTreatments from '@/components/SignatureTreatments'
+import ConsultationCTA from '@/components/ConsultationCTA'
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
         <Hero />
         <LegacyExcellence />
         <SignatureTreatments />
+        <ConsultationCTA />
         {/* Additional sections will be added here */}
       </main>
     </>
