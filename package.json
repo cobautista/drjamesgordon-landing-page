@@ -22,6 +22,7 @@
   "author": "Cob (cobautista)",
   "license": "PROPRIETARY",
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "@tailwindcss/postcss": "^4.1.18",
     "airtable": "^0.12.2",
     "framer-motion": "^11.13.5",

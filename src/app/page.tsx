@@ -7,6 +7,7 @@ import DrGordonDifference from '@/components/DrGordonDifference'
 import HallmarkExcellence from '@/components/HallmarkExcellence'
 import PressFeatures from '@/components/PressFeatures'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
+import ContactForm from '@/components/ContactForm'
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
         <HallmarkExcellence />
         <PressFeatures />
         <BeforeAfterGallery />
+        <ContactForm />
         {/* Additional sections will be added here */}
       </main>
     </>
