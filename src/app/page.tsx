@@ -4,6 +4,7 @@ import LegacyExcellence from '@/components/LegacyExcellence'
 import SignatureTreatments from '@/components/SignatureTreatments'
 import ConsultationCTA from '@/components/ConsultationCTA'
 import DrGordonDifference from '@/components/DrGordonDifference'
+import HallmarkExcellence from '@/components/HallmarkExcellence'
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <SignatureTreatments />
         <ConsultationCTA />
         <DrGordonDifference />
+        <HallmarkExcellence />
         {/* Additional sections will be added here */}
       </main>
     </>
