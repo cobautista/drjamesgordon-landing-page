@@ -16,7 +16,7 @@ import { motion } from 'framer-motion'
 
 export default function ConsultationCTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-20 sm:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-24 sm:py-32 lg:py-40">
       {/* Subtle Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -67,7 +67,7 @@ export default function ConsultationCTA() {
               delay: 0.4,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
-            className="mt-10 flex flex-wrap items-center justify-center gap-8 sm:gap-12"
+            className="mt-12 flex flex-wrap items-center justify-center gap-12 sm:gap-16"
           >
             <TrustBadge
               icon={
@@ -135,7 +135,7 @@ export default function ConsultationCTA() {
               delay: 0.6,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
-            className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6"
+            className="mt-16 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8"
           >
             {/* Primary CTA */}
             <a

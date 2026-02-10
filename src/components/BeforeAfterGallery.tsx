@@ -57,10 +57,10 @@ const procedures: BeforeAfter[] = [
 
 export default function BeforeAfterGallery() {
   return (
-    <section className="relative bg-gray-50 py-20 sm:py-28 lg:py-32">
+    <section className="relative bg-gray-50 py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-20 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function BeforeAfterGallery() {
         </div>
 
         {/* Before/After Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {procedures.map((procedure, index) => (
             <motion.div
               key={procedure.id}

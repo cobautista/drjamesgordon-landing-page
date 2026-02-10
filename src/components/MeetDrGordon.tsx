@@ -15,7 +15,7 @@ import { motion } from 'framer-motion'
 
 export default function MeetDrGordon() {
   return (
-    <section className="relative bg-white py-20 sm:py-28 lg:py-32">
+    <section className="relative bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Column - Photo */}
@@ -32,14 +32,21 @@ export default function MeetDrGordon() {
             {/* Photo Container */}
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
               {/* Placeholder for Dr. Gordon's photo */}
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-burgundy/10 via-gray-100 to-burgundy/5">
                 <div className="text-center">
-                  <div className="mb-4 text-8xl">👨‍⚕️</div>
-                  <p className="font-poppins text-sm font-semibold text-gray-600">
+                  <div className="mb-6 flex items-center justify-center">
+                    <div className="flex h-32 w-32 items-center justify-center rounded-full bg-burgundy/10 border-4 border-burgundy/20">
+                      <span className="text-5xl font-bold text-burgundy">JG</span>
+                    </div>
+                  </div>
+                  <p className="font-azosans text-xl font-black text-gray-dark">
                     Dr. James R. Gordon
                   </p>
+                  <p className="mt-2 font-poppins text-sm text-gray-600">
+                    MD, FACS
+                  </p>
                   <p className="mt-1 font-poppins text-xs text-gray-500">
-                    Professional Headshot
+                    Professional Photo Placeholder
                   </p>
                 </div>
               </div>
@@ -144,7 +151,7 @@ export default function MeetDrGordon() {
                 delay: 0.7,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
-              className="mt-8 space-y-3"
+              className="mt-10 space-y-4"
             >
               {[
                 'Board-Certified, American Board of Ophthalmology',
@@ -182,7 +189,7 @@ export default function MeetDrGordon() {
                 delay: 0.9,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
-              className="mt-10"
+              className="mt-12"
             >
               <a
                 href="#about"

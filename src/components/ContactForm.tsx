@@ -97,7 +97,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="relative bg-gradient-to-b from-white via-gray-50 to-white py-20 sm:py-28 lg:py-32">
+    <section className="relative bg-gradient-to-b from-white via-gray-50 to-white py-24 sm:py-32 lg:py-40">
       {/* Decorative Background */}
       <div
         className="absolute inset-0 opacity-[0.02]"
@@ -108,7 +108,7 @@ export default function ContactForm() {
 
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-12 text-center">
+        <div className="mb-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -163,7 +163,7 @@ export default function ContactForm() {
           }}
           className="rounded-2xl bg-white p-8 shadow-xl sm:p-10 lg:p-12"
         >
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
             {/* Full Name */}
             <div>
               <label

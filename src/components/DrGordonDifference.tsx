@@ -17,7 +17,7 @@ import { motion, useInView } from 'framer-motion'
 
 export default function DrGordonDifference() {
   return (
-    <section className="relative bg-white py-20 sm:py-28 lg:py-32">
+    <section className="relative bg-white py-24 sm:py-32 lg:py-40">
       {/* Subtle Background Accent */}
       <div className="absolute left-0 right-0 top-1/2 h-1/2 -translate-y-1/2 bg-gradient-to-b from-gray-50 via-gray-50 to-transparent opacity-50" />
 
@@ -109,7 +109,7 @@ export default function DrGordonDifference() {
               delay: 0.9,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
-            className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3"
+            className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-3"
           >
             <TrustPillar
               title="Surgical Excellence"

@@ -39,10 +39,10 @@ const textStates = [
 ]
 
 const awardLogos = [
-  { src: '/images/awards/award-1.svg', alt: 'Board Certified', width: 80, height: 80 },
-  { src: '/images/awards/award-2.svg', alt: 'Top Doctor 2024', width: 80, height: 80 },
-  { src: '/images/awards/award-3.svg', alt: 'Castle Connolly', width: 80, height: 80 },
-  { src: '/images/awards/award-4.svg', alt: 'Fellow AACS', width: 80, height: 80 },
+  { src: '/images/awards/award-1.svg', alt: 'Board Certified', width: 120, height: 120 },
+  { src: '/images/awards/award-2.svg', alt: 'Top Doctor 2024', width: 120, height: 120 },
+  { src: '/images/awards/award-3.svg', alt: 'Castle Connolly', width: 120, height: 120 },
+  { src: '/images/awards/award-4.svg', alt: 'Fellow AACS', width: 120, height: 120 },
 ]
 
 export default function Hero() {
@@ -86,12 +86,12 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(0,0,0,0) 61.45%, rgba(0,0,0,0.2) 100%)',
+              'linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%)',
           }}
         />
 
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content Container */}
@@ -123,11 +123,12 @@ export default function Hero() {
                     }}
                     className={`font-poppins font-semibold text-white ${
                       index === 0
-                        ? 'text-4xl sm:text-5xl lg:text-6xl'
+                        ? 'text-4xl sm:text-5xl lg:text-7xl'
                         : index === 1
-                          ? 'text-3xl sm:text-4xl lg:text-5xl tracking-wider'
-                          : 'text-2xl sm:text-3xl lg:text-4xl font-light'
+                          ? 'text-3xl sm:text-4xl lg:text-6xl tracking-wider'
+                          : 'text-2xl sm:text-3xl lg:text-5xl font-light'
                     }`}
+                    style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.9)' }}
                   >
                     {line}
                   </motion.h1>
@@ -146,7 +147,10 @@ export default function Hero() {
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
               >
-                <h1 className="font-azosans text-6xl font-black tracking-tight text-white sm:text-7xl lg:text-8xl">
+                <h1
+                  className="font-azosans text-6xl font-black tracking-tight text-white sm:text-7xl lg:text-9xl"
+                  style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.9)' }}
+                >
                   {currentState.content}
                 </h1>
               </motion.div>
@@ -162,9 +166,12 @@ export default function Hero() {
                   duration: 1.2,
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
-                className="space-y-6"
+                className="space-y-8"
               >
-                <h1 className="font-bhineka text-5xl italic text-white sm:text-6xl lg:text-7xl">
+                <h1
+                  className="font-bhineka text-5xl italic text-white sm:text-7xl lg:text-8xl"
+                  style={{ textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.9)' }}
+                >
                   {currentState.content}
                 </h1>
                 <motion.p
@@ -175,7 +182,8 @@ export default function Hero() {
                     delay: 0.25,
                     ease: [0.25, 0.46, 0.45, 0.94],
                   }}
-                  className="font-poppins text-2xl font-light text-white/90 sm:text-3xl lg:text-4xl"
+                  className="font-poppins text-2xl font-light text-white/95 sm:text-3xl lg:text-5xl"
+                  style={{ textShadow: '0 2px 12px rgba(0,0,0,0.7)' }}
                 >
                   {currentState.subtitle}
                 </motion.p>
@@ -193,7 +201,7 @@ export default function Hero() {
             delay: 1,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 sm:gap-12"
+          className="mt-20 flex flex-wrap items-center justify-center gap-12 sm:gap-16"
         >
           {awardLogos.map((award, index) => (
             <motion.div

@@ -92,10 +92,10 @@ const treatments: Treatment[] = [
 
 export default function SignatureTreatments() {
   return (
-    <section className="relative bg-gray-50 py-20 sm:py-28 lg:py-32">
+    <section className="relative bg-gray-50 py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-20 text-center">
           <h2 className="font-azosans text-4xl font-black tracking-tight text-gray-dark sm:text-5xl lg:text-6xl">
             SIGNATURE TREATMENTS
           </h2>
@@ -105,14 +105,14 @@ export default function SignatureTreatments() {
         </div>
 
         {/* Treatment Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {treatments.map((treatment) => (
             <TreatmentCard key={treatment.id} treatment={treatment} />
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center">
+        <div className="mt-20 text-center">
           <p className="mb-6 font-poppins text-lg text-gray-600">
             Explore our full range of specialized procedures
           </p>
@@ -178,7 +178,7 @@ function TreatmentCard({ treatment }: { treatment: Treatment }) {
 
         {/* Default State: Category Title + Icon */}
         <div
-          className={`absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-400 ${
+          className={`absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-400 ${
             isHovered ? 'opacity-0' : 'opacity-100'
           }`}
           style={{
@@ -203,7 +203,7 @@ function TreatmentCard({ treatment }: { treatment: Treatment }) {
 
         {/* Hover State: Procedure List */}
         <div
-          className={`absolute inset-0 flex flex-col justify-center p-6 transition-opacity duration-400 ${
+          className={`absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-400 ${
             isHovered ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
@@ -211,12 +211,12 @@ function TreatmentCard({ treatment }: { treatment: Treatment }) {
           }}
         >
           {/* Category Title - Small */}
-          <h3 className="mb-4 border-b-2 border-burgundy pb-2 font-azosans text-xl font-black text-gray-dark">
+          <h3 className="mb-6 border-b-2 border-burgundy pb-3 font-azosans text-xl font-black text-gray-dark">
             {treatment.category}
           </h3>
 
           {/* Procedure List */}
-          <ul className="space-y-2 overflow-y-auto">
+          <ul className="space-y-3 overflow-y-auto">
             {treatment.procedures.map((procedure, index) => (
               <li
                 key={index}

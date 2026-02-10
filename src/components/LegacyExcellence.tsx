@@ -83,7 +83,7 @@ export default function LegacyExcellence() {
   }, [isHovered])
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 sm:py-28 lg:py-32">
+    <section className="relative overflow-hidden bg-white py-24 sm:py-32 lg:py-40">
       {/* Background Pattern - Subtle Medical Texture */}
       <div
         className="absolute inset-0 opacity-5"
@@ -94,7 +94,7 @@ export default function LegacyExcellence() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-20 text-center">
           <h2 className="font-azosans text-4xl font-black tracking-tight text-gray-dark sm:text-5xl lg:text-6xl">
             A LEGACY OF EXCELLENCE
           </h2>
@@ -115,7 +115,7 @@ export default function LegacyExcellence() {
             }}
             modules={[Autoplay, FreeMode]}
             slidesPerView="auto"
-            spaceBetween={40}
+            spaceBetween={48}
             loop={true}
             speed={8000}
             autoplay={{
