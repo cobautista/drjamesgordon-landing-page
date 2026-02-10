@@ -5,6 +5,7 @@ import SignatureTreatments from '@/components/SignatureTreatments'
 import ConsultationCTA from '@/components/ConsultationCTA'
 import DrGordonDifference from '@/components/DrGordonDifference'
 import HallmarkExcellence from '@/components/HallmarkExcellence'
+import PressFeatures from '@/components/PressFeatures'
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <ConsultationCTA />
         <DrGordonDifference />
         <HallmarkExcellence />
+        <PressFeatures />
         {/* Additional sections will be added here */}
       </main>
     </>
