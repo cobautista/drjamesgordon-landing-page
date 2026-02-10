@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import LegacyExcellence from '@/components/LegacyExcellence'
+import MeetDrGordon from '@/components/MeetDrGordon'
 import SignatureTreatments from '@/components/SignatureTreatments'
 import ConsultationCTA from '@/components/ConsultationCTA'
 import DrGordonDifference from '@/components/DrGordonDifference'
@@ -16,6 +17,7 @@ export default function HomePage() {
       <main className="min-h-screen">
         <Hero />
         <LegacyExcellence />
+        <MeetDrGordon />
         <SignatureTreatments />
         <ConsultationCTA />
         <DrGordonDifference />
