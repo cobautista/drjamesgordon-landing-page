@@ -216,18 +216,20 @@ function AccreditationLogo({
   return (
     <div className="group relative cursor-pointer">
       {/* Logo Container */}
-      <div className="flex h-32 w-32 items-center justify-center rounded-xl bg-white p-6 shadow-md transition-all duration-400 hover:scale-110 hover:shadow-xl sm:h-36 sm:w-36">
+      <div className="flex h-32 w-32 lg:h-40 lg:w-40 items-center justify-center rounded-xl bg-white p-4 lg:p-6 shadow-md transition-all duration-400 hover:scale-110 hover:shadow-xl">
         {/* Placeholder Logo */}
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center w-full h-full">
           {/* Logo Circle */}
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-burgundy/10">
-            <span className="font-azosans text-xl font-black text-burgundy">
-              {accreditation.abbreviation}
+          <div className="flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-full bg-burgundy/10 mb-2 lg:mb-3">
+            <span className="font-azosans text-base lg:text-lg xl:text-xl font-black text-burgundy leading-none">
+              {accreditation.abbreviation.length > 6
+                ? accreditation.abbreviation.substring(0, 6)
+                : accreditation.abbreviation}
             </span>
           </div>
 
           {/* Logo Name */}
-          <p className="mt-3 font-poppins text-xs font-semibold text-gray-600">
+          <p className="font-poppins text-[0.65rem] lg:text-xs font-semibold text-gray-600 line-clamp-1">
             {accreditation.abbreviation}
           </p>
         </div>

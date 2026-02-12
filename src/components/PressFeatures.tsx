@@ -255,24 +255,24 @@ function PressCoverCard({
       {/* Cover Container */}
       <div className="overflow-hidden rounded-xl bg-white shadow-md transition-all duration-400 hover:-translate-y-2 hover:shadow-xl">
         {/* Cover Image */}
-        <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+        <div className="relative aspect-[3/4] min-h-[300px] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
           {/* Placeholder for magazine cover */}
           <div className="flex h-full w-full flex-col items-center justify-center p-6 text-center">
             {/* Publication Name */}
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-burgundy/10">
-              <span className="font-azosans text-2xl font-black text-burgundy">
+            <div className="mb-4 flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-burgundy/10">
+              <span className="font-azosans text-2xl sm:text-3xl font-black text-burgundy">
                 {item.publication.charAt(0)}
               </span>
             </div>
 
             {/* Publication Info */}
-            <p className="font-azosans text-xl font-black text-gray-dark">
+            <p className="font-azosans text-lg sm:text-xl font-black text-gray-dark line-clamp-2">
               {item.publication}
             </p>
-            <p className="mt-2 font-poppins text-sm text-gray-600">
+            <p className="mt-2 font-poppins text-xs sm:text-sm text-gray-600">
               {item.date}
             </p>
-            <p className="mt-4 font-poppins text-xs leading-relaxed text-gray-500">
+            <p className="mt-4 font-poppins text-xs leading-relaxed text-gray-500 line-clamp-3">
               {item.title}
             </p>
           </div>

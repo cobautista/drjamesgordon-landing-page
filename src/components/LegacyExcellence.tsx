@@ -169,10 +169,10 @@ function AwardCard({ award }: { award: Award }) {
         {/* Black Frame Border */}
         <div className="border-8 border-black p-2">
           {/* Award Image */}
-          <div className="relative aspect-[3/4] w-72 overflow-hidden bg-gray-100 sm:w-80">
+          <div className="relative aspect-[3/4] w-full max-w-[20rem] overflow-hidden bg-gray-100">
             {/* Placeholder for award image */}
-            <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 p-8 text-center">
-              <div className="mb-4 h-24 w-24 rounded-full bg-burgundy/10 p-6">
+            <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 p-6 sm:p-8 text-center">
+              <div className="mb-4 flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-burgundy/10 p-5 sm:p-6">
                 <svg
                   className="h-full w-full text-burgundy"
                   fill="none"
@@ -187,10 +187,10 @@ function AwardCard({ award }: { award: Award }) {
                   />
                 </svg>
               </div>
-              <p className="font-azosans text-lg font-black text-gray-dark">
+              <p className="font-azosans text-base sm:text-lg font-black text-gray-dark">
                 {award.title}
               </p>
-              <p className="mt-2 font-poppins text-sm font-medium text-gray-600">
+              <p className="mt-2 font-poppins text-xs sm:text-sm font-medium text-gray-600">
                 {award.subtitle}
               </p>
             </div>

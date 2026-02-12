@@ -35,8 +35,8 @@ export default function MeetDrGordon() {
               <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-burgundy/10 via-gray-100 to-burgundy/5">
                 <div className="text-center">
                   <div className="mb-6 flex items-center justify-center">
-                    <div className="flex h-32 w-32 items-center justify-center rounded-full bg-burgundy/10 border-4 border-burgundy/20">
-                      <span className="text-5xl font-bold text-burgundy">JG</span>
+                    <div className="flex h-36 w-36 sm:h-40 sm:w-40 items-center justify-center rounded-full bg-burgundy/10 border-4 border-burgundy/20">
+                      <span className="text-4xl sm:text-5xl font-bold text-burgundy">JG</span>
                     </div>
                   </div>
                   <p className="font-azosans text-xl font-black text-gray-dark">

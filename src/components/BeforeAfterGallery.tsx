@@ -190,9 +190,11 @@ function BeforeAfterCard({ procedure }: { procedure: BeforeAfter }) {
         {/* After Image (Background) */}
         <div className="absolute inset-0">
           {/* Placeholder After Image */}
-          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gray-150 to-gray-200">
             <div className="text-center">
-              <div className="mb-3 text-6xl">👁️</div>
+              <div className="mb-3 flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center">
+                <span className="text-4xl sm:text-5xl">👁️</span>
+              </div>
               <p className="font-poppins text-sm font-semibold text-gray-600">
                 After
               </p>
@@ -216,9 +218,11 @@ function BeforeAfterCard({ procedure }: { procedure: BeforeAfter }) {
           }}
         >
           {/* Placeholder Before Image */}
-          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300">
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gray-150 to-gray-200">
             <div className="text-center">
-              <div className="mb-3 text-6xl">👁️</div>
+              <div className="mb-3 flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center">
+                <span className="text-4xl sm:text-5xl">👁️</span>
+              </div>
               <p className="font-poppins text-sm font-semibold text-gray-600">
                 Before
               </p>
